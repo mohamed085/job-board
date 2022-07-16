@@ -7,6 +7,8 @@ import Jobs from "@/views/Jobs";
 import Dashboard from "@/views/Dashboard/Index";
 import HomeDashboard from "@/views/Dashboard/Home";
 import JobsDashboard from "@/views/Dashboard/Jobs";
+import Profile from "@/views/Profile";
+import JobDetails from "@/views/JobDetails";
 
 Vue.use(VueRouter)
 
@@ -14,6 +16,8 @@ const routes = [
   { path: '/', component: Home },
   { path: '/login', component: Login },
   { path: '/register', component: Register },
+  { path: '/profile', component: Profile },
+  { path: '/job/:id', component: JobDetails },
   { path: '/jobs', component: Jobs },
   { path: '/dashboard', component: Dashboard,
     children: [

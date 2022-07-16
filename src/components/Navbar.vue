@@ -46,7 +46,7 @@ export default {
   data() {
     return {
       authorize: true,
-      type: 'company'
+      type: 'applicant'
     }
   }
 }
